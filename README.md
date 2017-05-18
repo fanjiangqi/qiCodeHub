@@ -4,4 +4,4 @@
 - algorithm.sort排序算法
 
 ### 添加记录（成就感很重要）
-- algorithm.sort.HeapSort.java 堆排序，不同于算法书，数组从0开始使用
+- HeapSort.java 堆排序，不同于算法书，数组从0开始使用
