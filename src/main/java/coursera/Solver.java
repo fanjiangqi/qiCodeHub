@@ -26,11 +26,11 @@ public class Solver {
     class SearchNode implements Comparable{
         //priority = moves + hamming
         public int compareTo(Object o) {
-            if (board.manhattan()== ((SearchNode)o).board.manhattan())
+            if (priority== ((SearchNode)o).priority)
                 return 0;
-            return board.manhattan() < ((SearchNode)o).board.manhattan() ? -1 : 1;
+            return priority < ((SearchNode)o).priority ? -1 : 1;
         }
-
+        private int priority;
         Board board;
         int moves;
         SearchNode previous;
@@ -39,43 +39,44 @@ public class Solver {
             this.board = board;
             this.moves = moves;
             this.previous = previous;
+            priority = board.hamming() + moves;
         }
     }
     public Solver(Board initial){
         MinPQ<SearchNode> pQueue = new MinPQ<SearchNode>();
-        MinPQ<SearchNode> tQueue = new MinPQ<>();
-        Board twinBorad = initial.twin();
+       // MinPQ<SearchNode> tQueue = new MinPQ<>();
+       // Board twinBorad = initial.twin();
         SearchNode initialNode = new SearchNode(initial,0, null);
-        SearchNode twinNode = new SearchNode(twinBorad,0, null);
+       // SearchNode twinNode = new SearchNode(twinBorad,0, null);
        // int k = 1; // 表示每次moves增加
 
         pQueue.insert(initialNode);
-        tQueue.insert(twinNode);
+       // tQueue.insert(twinNode);
         while (!pQueue.isEmpty() ){
             SearchNode iNode = pQueue.delMin();
-            SearchNode tNode = tQueue.delMin();
+           // SearchNode tNode = tQueue.delMin();
             if (iNode.board.isGoal()){
                 isSolve = true;
                 moves = iNode.moves;
                 goalNode = iNode;
                 break;
             }
-            if (tNode.board.isGoal()){
+          /*  if (tNode.board.isGoal()){
                 isSolve = false;
                 moves = -1;
                 goalNode = null;
                 break;
-            }
-            while (!pQueue.isEmpty())
-                pQueue.delMin();
-            while (!tQueue.isEmpty())
-                pQueue.delMin();
+            }*/
+           /* while (!pQueue.isEmpty())
+                pQueue.delMin();*/
+           /* while (!tQueue.isEmpty())
+                pQueue.delMin();*/
             for (Board b : iNode.board.neighbors()){
                 pQueue.insert(new SearchNode(b,iNode.moves + 1,iNode));
             }
-            for (Board b : tNode.board.neighbors()){
+           /* for (Board b : tNode.board.neighbors()){
                 pQueue.insert(new SearchNode(b,tNode.moves + 1,tNode));
-            }
+            }*/
             //k++;
         }
 
