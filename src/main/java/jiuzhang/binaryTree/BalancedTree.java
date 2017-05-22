@@ -8,6 +8,7 @@ import jiuzhang.TreeNode;
  * 思路： int isBalancedHelper(TreeNode root)
  * 返回 该节点的高度，返回-1 表示以该节点为根节点的树不是平衡二叉树
  *  ** 开始错误少了这一句，if (leftHight == -1 || rightHight == -1) return -1 **
+ *
  * https://leetcode.com/problems/balanced-binary-tree/#/description
  * Given a binary tree, determine if it is height-balanced.
  * For this problem, a height-balanced binary tree is defined as a binary tree
@@ -19,12 +20,17 @@ public class BalancedTree {
         if (root == null){
             return true;
         }
-        if (isBalancedHelper(root) != -1){
-            return true;
+        if (isBalancedHelper(root) == -1){
+            return false;
         }
-        return false;
+        return true;
     }
 
+    /**
+     * 返回 root节点的高度，如果返回-1 表示以该节点为根节点的树不是平衡二叉树
+     * @param root
+     * @return
+     */
     private int isBalancedHelper(TreeNode root){
         if (root == null){
             return 0;
