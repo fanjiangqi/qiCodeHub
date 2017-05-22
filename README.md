@@ -13,3 +13,6 @@
 - jiuzhang.binaryTree下添加 BalancedTree 判断一个二叉树是不是平衡二叉树，**分治法很有启发性**
 - jiuzhang.binaryTree下添加 PreTraversal.java 二叉树的前序遍历，3中方法（递归，分治，迭代）
 - jiuzhang.binaryTree下添加 LowestCommonAncestor.java 最短公共祖先，核心是找到那个节点，**第一次没写出来**
+- algorithm下，添加QuickSort和MergeSort，**经典总要记住**
+- jiuzhang下添加 FindString.java，source字符串中找target，**我不一定能很正确的写出**
+- jiuzhang.LinkedList 下添加 ReverseLinkedList，反转链表，**重要，记住**，我之前自己写的很简单

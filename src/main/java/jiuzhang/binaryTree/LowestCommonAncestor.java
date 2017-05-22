@@ -6,6 +6,8 @@ import jiuzhang.TreeNode;
  * Created by fanjiangqi on 2017/5/22.
  * 最短公共祖先，这个分治也很值得思考，第一次没写出来
  * 核心思路：是找到那个节点，并不是判断是否相等
+ *
+ * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/#/description
  */
 public class LowestCommonAncestor {
     //核心思路：是找到那个节点，并不是判断是否相等
