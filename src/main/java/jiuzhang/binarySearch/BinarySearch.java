@@ -1,4 +1,4 @@
-package algorithm.jiuzhang.binarySearch;
+package jiuzhang.binarySearch;
 
 /**
  * Created by fanjiangqi on 2017/5/21.
