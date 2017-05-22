@@ -9,4 +9,5 @@
 - 添加jiuzhang目录，用来学习jiuzhang的算法
 - jiuzhang.binarySearch目录下，主要为二分搜索的题目, BinarySearch是二分搜索的模板，要记住
 - jiuzhang.binarySearch目录下，SearchRotatedArray 旋转的有序数组利用二分查找，**实践时要画图**
-- jiuzhang.binaryTree目标下是二叉树的相关代码，Bfs.java 是二叉树的宽度优先搜索目标，**重要**
+- jiuzhang.binaryTree目录下是二叉树的相关代码，Bfs.java 是二叉树的宽度优先搜索目标，**重要**
+- jiuzhang.binaryTree下添加 BalancedTree 判断一个二叉树是不是平衡二叉树，**分治法很有启发性**
