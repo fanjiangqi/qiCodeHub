@@ -16,3 +16,6 @@
 - algorithm下，添加QuickSort和MergeSort，**经典总要记住**
 - jiuzhang下添加 FindString.java，source字符串中找target，**我不一定能很正确的写出**
 - jiuzhang.LinkedList 下添加 ReverseLinkedList，反转链表，**重要，记住**，我之前自己写的很简单
+- jiuzhang.dp 下添加 LIS.java 最长递增子序列，题目很经典，我经常想不出来 *2017.5.31*
+- jiuzhang.binarySearch 中添加了BinarySearch01，二分查找找出大于Key的第一个索引
+- jiuzhang.dp下添加 MaxSubarray,连续子数组的最大和，动归解决，**一次成功**
