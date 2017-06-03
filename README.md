@@ -19,3 +19,5 @@
 - jiuzhang.dp 下添加 LIS.java 最长递增子序列，题目很经典，我经常想不出来 *2017.5.31*
 - jiuzhang.binarySearch 中添加了BinarySearch01，二分查找找出大于Key的第一个索引
 - jiuzhang.dp下添加 MaxSubarray,连续子数组的最大和，动归解决，**一次成功**
+- 添加jiuzhang.search 目录，主要是关于搜索的问题，**遇到要求所有解的题目，就用深度搜索**，*2017.6.3*
+- jiuzhang.search 下添加Subsets, Subsets2, Permutations, Permutation2，全是DFS，和回溯的问题，**模板级别的，要记住**
