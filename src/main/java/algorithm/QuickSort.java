@@ -42,6 +42,7 @@ public class QuickSort {
             exch(nums, i, j);
         }
         exch(nums, lo, j);
+       // System.out.println(j);
         return j;
     }
 
@@ -55,7 +56,7 @@ public class QuickSort {
         int[] nums = {4,8,7,6,33,45,-1,-8,10};
         new QuickSort().quickSort(nums);
         for (int i : nums){
-            System.out.println(i);
+            System.out.print(i + " ");
         }
     }
 }
