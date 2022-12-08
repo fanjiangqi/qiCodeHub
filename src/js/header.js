@@ -1,4 +1,4 @@
 var modifiedHeaders = $request.headers;
-modifiedHeaders['MY_HEADER'] = 'abc123';
+modifiedHeaders['x-group'] = '3eal4i';
 
 $done({headers : modifiedHeaders});
