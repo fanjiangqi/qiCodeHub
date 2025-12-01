@@ -1,0 +1,12 @@
+# UPDATED: 2025-12-01 fan
+
+DOMAIN,gemini.google.com,GEMINI
+DOMAIN-SUFFIX,aistudio.google.com,GEMINI
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,GEMINI
+DOMAIN-SUFFIX,google.ai,GEMINI
+DOMAIN-SUFFIX,ai.google.dev,GEMINI
+DOMAIN-SUFFIX,googleapis.com,GEMINI
+DOMAIN-SUFFIX,google.com,GEMINI
+DOMAIN-SUFFIX,googleusercontent.com,GEMINI
+DOMAIN-SUFFIX,gstatic.com,GEMINI
+DOMAIN-SUFFIX,googapis.com,GEMINI
